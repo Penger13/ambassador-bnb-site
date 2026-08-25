@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ambassador B&B and Inn Next Door | Stratford, Ontario</title>
+  <meta name="description" content="A cozy Victorian bed & breakfast in Stratford, Ontario. Steps from the Avon and Festival Theatres. Free parking, homemade breakfast, and a warm welcome." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-name">Ambassador B&amp;B</span>
+        <span class="logo-sub">and Inn Next Door</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#location">Location</a>
+        <a href="#breakfast">Breakfast &amp; Amenities</a>
+        <a href="#local-guide">Local Guide</a>
+        <a href="policies.html">Policies</a>
+        <a href="#contact" class="nav-cta" style="background: var(--wine); color: #fff;">Book Now</a>
+        <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="nav-cta" style="background: var(--forest); color: #fff;">Check Availability</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile backdrop -->
+  <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+  <!-- Mobile menu -->
+  <aside class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-menu-head">
+      <div style="font-family: Playfair Display, Georgia, serif; font-weight:600; color:var(--forest-dark);">Menu</div>
+      <button id="closeMenu" aria-label="Close menu">✕</button>
+    </div>
+    <a href="#home" class="mobile-nav-link">Home</a>
+    <a href="#rooms" class="mobile-nav-link">Rooms</a>
+    <a href="#location" class="mobile-nav-link">Location</a>
+    <a href="#breakfast" class="mobile-nav-link">Breakfast &amp; Amenities</a>
+    <a href="#local-guide" class="mobile-nav-link">Local Guide</a>
+    <a href="policies.html" class="mobile-nav-link">Policies</a>
+    <a href="#contact" class="mobile-nav-link" style="color:var(--wine); font-weight:600;">Book Now</a>
+    <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="btn btn-primary mobile-book" style="background:var(--forest);">Check Availability</a>
+  </aside>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-eyebrow">Est. 1923 · Stratford, Ontario</div>
+      <h1 class="hero-title">A Cozy Victorian <em>Bed &amp; Breakfast</em> in the Heart of Stratford Festival City</h1>
+      <p class="hero-subtitle">Walk to the Avon and Festival Theatres in minutes. Wake up to homemade breakfast, park your car for free, and let our swans greet you at the door — a warm, personal alternative to the downtown hotels.</p>
+      <div class="hero-cta">
+        <a href="#rooms" class="btn btn-primary">Explore Our Rooms</a>
+        <a href="#contact" class="btn btn-ghost" style="border-color: var(--gold-light);">Book Now</a>
+        <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="btn btn-ghost">Check Availability</a>
+      </div>
+      <div class="hero-features">
+        <div class="hero-feature">🎭 8 min to Avon Theatre</div>
+        <div class="hero-feature">🅿️ Free private parking</div>
+        <div class="hero-feature">🍳 Homemade breakfast</div>
+        <div class="hero-feature">📶 Complimentary WiFi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section id="location" class="section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label text-center">Location, Location, Location</div>
+        <h2 class="text-center">Steps from Stratford's Best</h2>
+        <p class="section-subtitle text-center">Why fight for downtown parking? Leave your car in our free private lot and walk to everything — the theatres, the restaurants, and the river.</p>
+      </div>
+
+      <div class="location-grid">
+        <div class="location-card reveal">
+          <div class="location-icon-wrap" style="background: rgba(122, 42, 42, 0.1); font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">🎭</div>
+          <h3>Avon Theatre</h3>
+          <div class="location-distance" style="color: var(--wine);">8 min walk</div>
+          <p>The heart of Stratford Festival's musical and contemporary stage, just a short stroll down Ontario Street.</p>
+        </div>
+        <div class="location-card reveal">
+          <div class="location-icon-wrap" style="background: rgba(45, 74, 62, 0.1); font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">🏛️</div>
+          <h3>Festival Theatre</h3>
+          <div class="location-distance" style="color: var(--forest);">12 min walk</div>
+          <p>The iconic Shakespearean stage — home to the Festival's grandest productions, set on a picturesque riverside campus.</p>
+        </div>
+        <div class="location-card reveal">
+          <div class="location-icon-wrap" style="background: rgba(184, 146, 90, 0.15); font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">🏙️</div>
+          <h3>Downtown Stratford</h3>
+          <div class="location-distance" style="color: var(--gold);">5 min walk</div>
+          <p>City Hall, boutique shops, cafés, and celebrated restaurants all within a few minutes' walk from your door.</p>
+        </div>
+        <div class="location-card reveal">
+          <div class="location-icon-wrap" style="background: rgba(122, 42, 42, 0.1); font-size: 1.5rem; display: flex; align-items: center; justify-content: center;">🦢</div>
+          <h3>Victoria Lake &amp; Swan Park</h3>
+          <div class="location-distance" style="color: var(--wine);">7 min walk</div>
+          <p>A serene waterside stroll past Stratford's famous swans, willow-lined paths, and the scenic Avon River.</p>
+        </div>
+      </div>
+
+      <div class="location-map-row">
+        <div class="location-map-text">
+          <div class="section-label">Find us on the map</div>
+          <h2>266 Ontario Street, Stratford</h2>
+          <p>Tucked between the theatre district and downtown, our 1923 Victorian twin house sits on a quiet, tree-lined street — close enough to walk everywhere, far enough to sleep peacefully.</p>
+          <p>The four white swans flanking our front steps have welcomed guests for over half a century. You'll know you've arrived when you see them.</p>
+          <div class="location-highlight">
+            <p><strong>Free private parking on-site</strong> — a rare luxury in Stratford during festival season. No street parking, no garage fees, no stress after a late evening at the theatre.</p>
+          </div>
+        </div>
+        <div class="location-map-visual">
+          <iframe title="Ambassador B&B Location" src="https://www.google.com/maps?q=266+Ontario+St,+Stratford,+ON+N5A+3H5&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section id="rooms" class="section">
+    <div class="container">
+      <div class="text-center">
+        <div class="section-label text-center">Our Accommodations</div>
+        <h2 class="text-center">Two Homes, One Warm Welcome</h2>
+        <p class="section-subtitle text-center">Choose from our cozy bed-and-breakfast guest rooms with homemade breakfast included, or spread out in one of our spacious suites next door — both in the same 1923 Victorian twin house, both attended by the same attentive hosts.</p>
+      </div>
+
+      <div class="rooms-subsection">
+        <div class="rooms-subsection-title">Ambassador B&amp;B Guest Home</div>
+        <p class="rooms-subsection-sub">Four spacious guest rooms on the main property, each with a private ensuite bath, premium linens, and a homemade breakfast to start your day. Included: WiFi, air conditioning, and free on-site parking.</p>
+        <div class="room-grid">
+
+          <!-- Room 1 · Yellow -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/room-yellow.jpg" alt="Room 1 · Yellow" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">Standard Room</div>
+              <h3 class="room-name"><a href="room-yellow.html" style="color:inherit; text-decoration:none;">Room 1 · Yellow</a></h3>
+              <div class="room-meta"><span>1 Queen Bed</span><span>~142 sq ft</span></div>
+              <ul class="room-features">
+                <li>Private ensuite bathroom</li>
+                <li>Premium imported linens</li>
+                <li>Cozy armchair</li>
+                <li>Individually controlled A/C</li>
+                <li>Soundproofed walls</li>
+                <li>Complimentary bathrobes</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$165</span></div>
+                <a href="room-yellow.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 2 · Blue -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/room-blue-2.jpg" alt="Room 2 · Blue" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">Standard Room</div>
+              <h3 class="room-name"><a href="room-blue-2.html" style="color:inherit; text-decoration:none;">Room 2 · Blue</a></h3>
+              <div class="room-meta"><span>1 Queen Bed</span><span>~150 sq ft</span></div>
+              <ul class="room-features">
+                <li>Private ensuite bathroom</li>
+                <li>Premium imported linens</li>
+                <li>Seating area</li>
+                <li>Individually controlled A/C</li>
+                <li>Soundproofed walls</li>
+                <li>Complimentary bathrobes</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$185</span></div>
+                <a href="room-blue-2.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 3 · Blue (Most Popular) -->
+          <div class="room-card featured reveal">
+            <div class="room-image">
+              <img src="images/room-blue-3.jpg" alt="Room 3 · Blue" />
+              <div class="room-badge">Most Popular</div>
+            </div>
+            <div class="room-body">
+              <div class="room-type">Deluxe Room with Balcony</div>
+              <h3 class="room-name"><a href="room-blue-3.html" style="color:inherit; text-decoration:none;">Room 3 · Blue</a></h3>
+              <div class="room-meta"><span>1 Queen Bed</span><span>~170 sq ft</span></div>
+              <ul class="room-features">
+                <li>Private ensuite bathroom</li>
+                <li>Premium imported linens</li>
+                <li>Seating area with two chairs</li>
+                <li>Private balcony with garden view</li>
+                <li>Individually controlled A/C</li>
+                <li>Complimentary bathrobes</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$195</span></div>
+                <a href="room-blue-3.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 4 · Green -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/room-green.jpg" alt="Room 4 · Green" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">Standard Room</div>
+              <h3 class="room-name"><a href="room-green.html" style="color:inherit; text-decoration:none;">Room 4 · Green</a></h3>
+              <div class="room-meta"><span>1 Queen Bed</span><span>~140 sq ft</span></div>
+              <ul class="room-features">
+                <li>Private ensuite bathroom</li>
+                <li>Premium imported linens</li>
+                <li>Individually controlled A/C</li>
+                <li>Soundproofed walls</li>
+                <li>Complimentary bathrobes</li>
+                <li>Garden view</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$175</span></div>
+                <a href="room-green.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /room-grid -->
+        <p class="rooms-note">Rates include daily homemade breakfast. Additional rooms available with similar appointments — inquire for current availability.</p>
+      </div>
+
+      <div class="rooms-subsection">
+        <div class="rooms-subsection-title">Ambassador's Inn Next Door</div>
+        <p class="rooms-subsection-sub">Four independent luxury suites, each with its own living room and kitchenette — perfect for longer stays, families, or travellers who prefer more space and self-catering flexibility. Breakfast not included, but can be added for <strong>$20 CAD per day</strong>.</p>
+        <div class="room-grid">
+
+          <!-- Luxury Suite -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/luxury-suite.jpg" alt="Luxury Suite" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">Luxury Suite — Kitchenette</div>
+              <h3 class="room-name"><a href="room-luxury-suite.html" style="color:inherit; text-decoration:none;">Luxury Suite</a></h3>
+              <div class="room-meta"><span>King Bed</span><span>~400 sq ft</span></div>
+              <ul class="room-features">
+                <li>Separate living room</li>
+                <li>Full kitchenette</li>
+                <li>Premium bedding</li>
+                <li>Spacious sitting area</li>
+                <li>Independently controlled HVAC</li>
+                <li>Walk-in shower</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$240</span></div>
+                <a href="room-luxury-suite.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deluxe Suite -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/deluxe-suite.jpg" alt="Deluxe Suite" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">Deluxe Suite — Kitchenette</div>
+              <h3 class="room-name"><a href="room-deluxe-suite.html" style="color:inherit; text-decoration:none;">Deluxe Suite</a></h3>
+              <div class="room-meta"><span>King Bed</span><span>~400 sq ft</span></div>
+              <ul class="room-features">
+                <li>Separate living room</li>
+                <li>Full kitchenette</li>
+                <li>Premium bedding</li>
+                <li>Garden view</li>
+                <li>Independently controlled HVAC</li>
+                <li>Walk-in shower</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$230</span></div>
+                <a href="room-deluxe-suite.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Suite -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/premium-suite.jpg" alt="Premium Suite" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">Premium Suite — Kitchenette</div>
+              <h3 class="room-name"><a href="room-premium-suite.html" style="color:inherit; text-decoration:none;">Premium Suite</a></h3>
+              <div class="room-meta"><span>King Bed</span><span>~420 sq ft</span></div>
+              <ul class="room-features">
+                <li>Separate living room</li>
+                <li>Full kitchenette</li>
+                <li>Premium bedding</li>
+                <li>Park view</li>
+                <li>Independently controlled HVAC</li>
+                <li>Walk-in shower</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$250</span></div>
+                <a href="room-premium-suite.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- King Suite -->
+          <div class="room-card reveal">
+            <div class="room-image">
+              <img src="images/king-suite.jpg" alt="King Suite" />
+            </div>
+            <div class="room-body">
+              <div class="room-type">King Suite — Kitchenette</div>
+              <h3 class="room-name"><a href="room-king-suite.html" style="color:inherit; text-decoration:none;">King Suite</a></h3>
+              <div class="room-meta"><span>King Bed</span><span>~450 sq ft</span></div>
+              <ul class="room-features">
+                <li>Separate living room</li>
+                <li>Full kitchenette</li>
+                <li>Premium bedding</li>
+                <li>Two queen beds</li>
+                <li>Independently controlled HVAC</li>
+                <li>Walk-in shower</li>
+              </ul>
+              <div class="room-footer">
+                <div class="room-price"><span class="room-price-num">$260</span></div>
+                <a href="room-king-suite.html" class="room-book-btn">View Details</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /room-grid -->
+        <p class="rooms-note">All suites are approximately 400 sq ft with a separate living area. King bed or two Twin XL configurations available — please specify your preference when booking. Breakfast can be added for <strong>$20 CAD per day</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breakfast & Amenities -->
+  <section id="breakfast" class="section">
+    <div class="container">
+      <div class="breakfast-hero reveal">
+        <div class="breakfast-image">
+          <img src="images/breakfast.jpg" alt="Homemade breakfast spread" />
+        </div>
+        <div class="breakfast-text">
+          <div class="section-label">Start Your Day Right</div>
+          <h2>Homemade Breakfast, <em style="font-style: italic; color: var(--wine);">Two Traditions</em></h2>
+          <p>Every morning, we serve a thoughtfully prepared breakfast featuring <strong>one</strong> of our two signature menus – we rotate between a classic Canadian spread and a traditional Chinese-style breakfast, so every stay offers something new and delicious.</p>
+          <p>Both options are prepared fresh each morning with high-quality ingredients. Our breakfast is served in our sunlit dining room, or you can take it out to the garden patio on warm mornings. We cater to dietary preferences – just let us know in advance and we'll do our best to accommodate.</p>
+          <p style="color: var(--wine); font-weight: 600; font-style: italic; margin-top: 10px;">☕ Every breakfast includes a selection of fine teas including our signature Fujian oolong, shipped directly from the oolong tea hometown.</p>
+          
+          <!-- Breakfast Note for Inn Guests -->
+          <div style="background: var(--ivory); border-left: 4px solid var(--gold); padding: 16px 20px; border-radius: 6px; margin: 16px 0;">
+            <p style="margin: 0; font-size: 0.95rem; color: var(--text-soft);">
+              <strong>📌 For Inn Next Door guests:</strong> Breakfast is not included in the suite rate, but can be added for <strong>$20 CAD per day</strong>. Just let us know when booking!
+            </p>
+          </div>
+          
+          <div class="breakfast-options">
+            <div class="breakfast-option">
+              <h4>Canadian Style</h4>
+              <ul>
+                <li>Fresh seasonal fruit</li>
+                <li>Homemade pancakes with maple syrup</li>
+                <li>Free-range eggs &amp; bacon</li>
+                <li>Artisan toast &amp; preserves</li>
+                <li>Coffee &amp; selection of teas</li>
+              </ul>
+            </div>
+            <div class="breakfast-option">
+              <h4>Chinese Style</h4>
+              <ul>
+                <li>Congee with savory toppings</li>
+                <li>Steamed buns &amp; dumplings</li>
+                <li>Speciality Chinese fried rice</li>
+                <li>Pickled vegetables</li>
+                <li>Soy milk &amp; youtiao</li>
+                <li>Premium Fujian oolong tea</li>
+              </ul>
+            </div>
+          </div>
+          <p style="margin-top: 16px; color: var(--muted); font-size: 0.95rem; font-style: italic; text-align: center;">We rotate between these two set menus each morning – one option is served to all guests per day.</p>
+        </div>
+      </div>
+
+      <div class="breakfast-hero reverse reveal">
+        <div class="breakfast-image">
+          <img src="images/garden.jpg" alt="Sunny garden patio" />
+        </div>
+        <div class="breakfast-text">
+          <div class="section-label">Your Private Sanctuary</div>
+          <h2>Garden, Sun Patio &amp; Common Sitting Areas</h2>
+          <p>Step through the back door into a quiet, mature garden with a flagstone patio — a perfect spot for a pre-theatre glass of wine, an afternoon book, or a cup of tea after a long day of sightseeing.</p>
+          <p>Inside, you'll find multiple spacious common areas including our main floor dining room, coffee room with complimentary tea and K-Cup machine, and a front sunroom overlooking Ontario Street — all designed for your comfort and relaxation.</p>
+        </div>
+      </div>
+
+      <div class="amenities-header reveal">
+        <div class="section-label text-center">Everything You Need</div>
+        <h2 class="text-center" style="margin-bottom: 16px;">Thoughtful Amenities</h2>
+        <p class="section-subtitle text-center" style="margin: 0 auto;">From the moment you arrive until the day you leave, every detail is taken care of so you can focus on the festival.</p>
+      </div>
+
+      <div class="amenities-grid">
+        <div class="amenity-card reveal">
+          <div class="amenity-icon" style="font-size: 1.8rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">🅿️</div>
+          <h3>Free Private Parking</h3>
+          <p>On-site parking for every guest — a rare perk in Stratford during festival season.</p>
+        </div>
+        <div class="amenity-card reveal">
+          <div class="amenity-icon" style="font-size: 1.8rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">📶</div>
+          <h3>Complimentary WiFi</h3>
+          <p>Fast, reliable internet throughout both properties, perfect for planning your day or catching up.</p>
+        </div>
+        <div class="amenity-card reveal">
+          <div class="amenity-icon" style="font-size: 1.8rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">🍳</div>
+          <h3>Homemade Breakfast</h3>
+          <p>Canadian and Chinese-style options, with premium Fujian oolong and a selection of fine teas.</p>
+        </div>
+        <div class="amenity-card reveal">
+          <div class="amenity-icon" style="font-size: 1.8rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">🛏️</div>
+          <h3>Premium Linens &amp; Robes</h3>
+          <p>Imported high-thread-count bedding and plush bathrobes in every guest room.</p>
+        </div>
+        <div class="amenity-card reveal">
+          <div class="amenity-icon" style="font-size: 1.8rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">🧺</div>
+          <h3>Free Laundry</h3>
+          <p>Complimentary laundry facilities available for longer stays — ideal for multi-week theatre visits.</p>
+        </div>
+        <div class="amenity-card reveal">
+          <div class="amenity-icon" style="font-size: 1.8rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">🪑</div>
+          <h3>Spacious Sitting Areas</h3>
+          <p>Multiple common spaces to relax, read, or socialize throughout the property.</p>
+        </div>
+      </div>
+
+      <!-- Common Sitting Areas Details -->
+      <div style="margin-top: 60px; padding: 40px 0; background: var(--ivory); border-radius: var(--radius-lg);">
+        <div class="container">
+          <div class="text-center" style="margin-bottom: 40px;">
+            <div class="section-label text-center">Common Sitting Areas</div>
+            <h2 class="text-center">Relax &amp; Unwind in Our Shared Spaces</h2>
+            <p class="section-subtitle text-center">We have spacious sitting areas throughout the property for you to enjoy during your stay.</p>
+          </div>
+          
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            
+            <!-- Main Floor Dining Room -->
+            <div style="background: var(--white); border: 1px solid #eee; border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; margin-bottom: 12px;">🍽️</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Main Floor Dining Room</h3>
+              <p style="color: var(--muted);">This is our guests' breakfast dining room. Guests are welcome to use this as a common place as well — perfect for enjoying your morning meal or gathering with fellow travellers.</p>
+            </div>
+            
+            <!-- Coffee Room -->
+            <div style="background: var(--white); border: 1px solid #eee; border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; margin-bottom: 12px;">☕</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Coffee Room</h3>
+              <p style="color: var(--muted);">Solid wood roundtable with four chairs. Drinking water, green and red tea bags, café maker and K-Cup machine are ready to make your desired favourites throughout the day — all included in the room price.</p>
+            </div>
+            
+            <!-- Front Sunroom -->
+            <div style="background: var(--white); border: 1px solid #eee; border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; margin-bottom: 12px;">🌞</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Front Sunroom</h3>
+              <p style="color: var(--muted);">Main floor front closed sunroom — a great place to sit, rest, relax, and enjoy the view of Ontario Street.</p>
+            </div>
+            
+            <!-- Backyard Garden -->
+            <div style="background: var(--white); border: 1px solid #eee; border-radius: var(--radius-md); padding: 28px; box-shadow: var(--shadow-sm);">
+              <div style="font-size: 2rem; margin-bottom: 12px;">🌿</div>
+              <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Backyard Garden</h3>
+              <p style="color: var(--muted);">A sunny and quiet place with all-season beautiful flowers and bushes. You'll be happy to see organic tomato, butter squash, and kidney bean plants growing like crazy throughout the backyard garden and parking lot area.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Local Guide -->
+  <section id="local-guide" class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 50px;">
+        <div class="section-label text-center">Your Stratford Guide</div>
+        <h2 class="text-center">Why Stratford Captivates Visitors</h2>
+        <p class="section-subtitle text-center">The festival, the swans, the gardens, and the restaurants — there's a reason theatre lovers return to this town year after year.</p>
+      </div>
+
+      <div class="local-intro reveal">
+        <div class="local-intro-img">
+          <img src="images/stratford-festival.jpg" alt="Stratford Festival Theatre at dusk" />
+        </div>
+        <div class="local-intro-text">
+          <div class="section-label">The Stratford Festival</div>
+          <h2>A Theatrical Tradition Since 1953</h2>
+          <p>What began as a small Shakespearean festival under a tent has grown into one of the world's great repertory companies — presenting a season of twelve or more plays across four stages, from April through October.</p>
+          <p>The whole town comes alive for it. Sidewalks fill with playgoers between matinees and evening shows, restaurants offer pre-theatre menus, and every B&amp;B and inn becomes part of the experience.</p>
+          <div class="festival-points">
+            <div class="festival-point"><div class="festival-point-num">01</div><div class="festival-point-body"><h4>Stratford Festival</h4><p>North America's largest repertory theatre festival, running from April to October with Shakespeare, musicals, and contemporary plays across four stages.</p></div></div>
+            <div class="festival-point"><div class="festival-point-num">02</div><div class="festival-point-body"><h4>Four Theatres, One Town</h4><p>Festival Theatre, Avon Theatre, Studio Theatre, and Tom Patterson Theatre — all within a compact, walkable downtown core.</p></div></div>
+            <div class="festival-point"><div class="festival-point-num">03</div><div class="festival-point-body"><h4>Beyond the Stage</h4><p>Pre-show talks, backstage tours, concerts, and the Festival's famous costume and prop collections make every visit unique.</p></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="local-grid">
+        <div class="local-card reveal">
+          <h3>Places to Eat Nearby</h3>
+          <div class="restaurant-item"><div class="restaurant-name">The Church Restaurant</div><div class="restaurant-type">Fine Dining</div><div class="restaurant-note">Housed in a historic church, a Stratford institution</div></div>
+          <div class="restaurant-item"><div class="restaurant-name">Revival House</div><div class="restaurant-type">Contemporary Canadian</div><div class="restaurant-note">Local ingredients, craft cocktails, lively atmosphere</div></div>
+          <div class="restaurant-item"><div class="restaurant-name">Foster's Inn</div><div class="restaurant-type">Pub &amp; Bistro</div><div class="restaurant-note">Cozy, historic, a favourite with theatre-goers</div></div>
+          <div class="restaurant-item"><div class="restaurant-name">Siam Garden</div><div class="restaurant-type">Thai</div><div class="restaurant-note">Fresh, flavourful, a short walk from the property</div></div>
+        </div>
+
+        <div class="local-card reveal">
+          <h3>Things to See &amp; Do</h3>
+          <div class="attraction-item"><div class="attraction-name">Victoria Lake &amp; Swans</div><div class="attraction-desc">The town's most iconic spot — stroll the willow-lined paths and visit the famous white swans.</div></div>
+          <div class="attraction-item"><div class="attraction-name">Stratford Summer Music</div><div class="attraction-desc">A world-class summer music festival spanning jazz, classical, and contemporary performances.</div></div>
+          <div class="attraction-item"><div class="attraction-name">Shakespearean Gardens</div><div class="attraction-desc">A themed garden beside the Festival Theatre, planted with flowers mentioned in Shakespeare's plays.</div></div>
+          <div class="attraction-item"><div class="attraction-name">Downtown Boutiques</div><div class="attraction-desc">Unique bookstores, galleries, clothing shops, and artisan chocolatiers along Ontario and Downie Streets.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Form -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 50px;">
+        <div class="section-label text-center">Reserve Your Stay</div>
+        <h2 class="text-center">Book Now</h2>
+        <p class="section-subtitle text-center">Fill out the form below and we'll get back to you promptly to confirm availability and answer any questions.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal">
+          <h2>Send Us a Message</h2>
+          <p class="contact-form-sub">We'll respond within 24 hours to confirm your booking.</p>
+
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none;"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div class="form-group">
+                <label for="room">Room Preference</label>
+                <select id="room" name="room">
+                  <option value="">Select a room...</option>
+                  <option value="Room 1 Yellow">Room 1 · Yellow</option>
+                  <option value="Room 2 Blue">Room 2 · Blue</option>
+                  <option value="Room 3 Blue">Room 3 · Blue</option>
+                  <option value="Room 4 Green">Room 4 · Green</option>
+                  <option value="Luxury Suite">Luxury Suite</option>
+                  <option value="Deluxe Suite">Deluxe Suite</option>
+                  <option value="Premium Suite">Premium Suite</option>
+                  <option value="King Suite">King Suite</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" />
+              </div>
+              <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <select id="guests" name="guests">
+                <option value="1">1 Guest</option>
+                <option value="2" selected>2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5+">5+ Guests</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Special Requests</label>
+              <textarea id="message" name="message" rows="4" placeholder="Any special requirements, dietary preferences, or questions..."></textarea>
+            </div>
+
+            <button type="submit" class="form-submit">Send Booking Request</button>
+          </form>
+        </div>
+
+        <!-- Contact Info & Check Availability Button -->
+        <div class="contact-info reveal">
+          <h2>Get in Touch</h2>
+          <p class="contact-info-lead">Have a question before you book? We're happy to help — reach out by phone, email, or the form and we'll get back to you promptly.</p>
+
+          <div class="info-block">
+            <div class="info-icon" style="font-size: 1.5rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">📱</div>
+            <div>
+              <h4>Cellphone</h4>
+              <p><a href="tel:+15195896158">+1 (519) 589-6158</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon" style="font-size: 1.5rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">🏠</div>
+            <div>
+              <h4>Homephone</h4>
+              <p><a href="tel:+13659916928">+1 (365) 991-6928</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon" style="font-size: 1.5rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">✉️</div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:pengfuyang@gmail.com">pengfuyang@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-icon" style="font-size: 1.5rem; display: flex; align-items: center; justify-content: center; background: rgba(184, 146, 90, 0.15);">📍</div>
+            <div>
+              <h4>Address</h4>
+              <p>266 Ontario Street<br>Stratford, Ontario, Canada<br>N5A 3H5</p>
+            </div>
+          </div>
+
+          <div class="contact-rating">
+            <div class="contact-rating-score">8.8 / 10</div>
+            <div class="contact-rating-label">Rated "Excellent" across booking platforms</div>
+          </div>
+
+          <!-- Check Availability Button at Bottom -->
+          <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; text-align:center; padding:16px; font-size:1.1rem; margin-top:20px; background:var(--forest);">
+            Check Availability &amp; Book Online
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Ambassador B&amp;B</h3>
+          <div class="footer-brand-sub">and Inn Next Door</div>
+          <p>A warm Victorian bed &amp; breakfast in the heart of Stratford, Ontario — steps from the Festival and Avon Theatres. Welcoming theatre lovers with four swans and a homemade breakfast since 1923.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#rooms">Our Rooms</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#breakfast">Breakfast &amp; Amenities</a></li>
+            <li><a href="#local-guide">Local Guide</a></li>
+            <li><a href="policies.html">Policies</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener">Check Availability</a></li>
+            <li><a href="tel:+15195896158">+1 (519) 589-6158</a></li>
+            <li><a href="mailto:pengfuyang@gmail.com">pengfuyang@gmail.com</a></li>
+            <li><a href="https://maps.google.com/?q=266+Ontario+St+Stratford+ON">266 Ontario Street</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Ambassador B&amp;B and Inn Next Door. All rights reserved.</span>
+        <span>266 Ontario Street · Stratford, Ontario · N5A 3H5</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const closeMenu = document.getElementById('closeMenu');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileBackdrop = document.getElementById('mobileBackdrop');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      mobileBackdrop.classList.add('open');
+      mobileBackdrop.style.display = 'block';
+    }
+    function closeMenuFn() {
+      mobileMenu.classList.remove('open');
+      mobileBackdrop.classList.remove('open');
+      setTimeout(() => { mobileBackdrop.style.display = 'none'; }, 300);
+    }
+
+    menuBtn.addEventListener('click', openMenu);
+    closeMenu.addEventListener('click', closeMenuFn);
+    mobileBackdrop.addEventListener('click', closeMenuFn);
+
+    // Close mobile menu when a nav link is clicked
+    document.querySelectorAll('.mobile-nav-link, .mobile-book').forEach(link => {
+      link.addEventListener('click', closeMenuFn);
+    });
+
+    // Reveal on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      revealElements.forEach(el => observer.observe(el));
+    } else {
+      revealElements.forEach(el => el.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Policies – Ambassador B&amp;B | Stratford</title>
+  <meta name="description" content="Read our check-in times, cancellation policy, breakfast details, parking, and more before booking your stay at Ambassador B&B." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Ambassador B&amp;B</span>
+      <span class="logo-sub">and Inn Next Door</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#rooms">Rooms</a>
+      <a href="index.html#location">Location</a>
+      <a href="index.html#breakfast">Breakfast &amp; Amenities</a>
+      <a href="index.html#local-guide">Local Guide</a>
+      <a href="policies.html" style="color:var(--wine); font-weight:600;">Policies</a>
+      <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="nav-cta">Book Now</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile backdrop -->
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+<!-- Mobile menu -->
+<aside class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-menu-head">
+    <div style="font-family: Playfair Display, Georgia, serif; font-weight:600; color:var(--forest-dark);">Menu</div>
+    <button id="closeMenu" aria-label="Close menu">✕</button>
+  </div>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="index.html#rooms" class="mobile-nav-link">Rooms</a>
+  <a href="index.html#location" class="mobile-nav-link">Location</a>
+  <a href="index.html#breakfast" class="mobile-nav-link">Breakfast &amp; Amenities</a>
+  <a href="index.html#local-guide" class="mobile-nav-link">Local Guide</a>
+  <a href="policies.html" class="mobile-nav-link" style="color:var(--wine); font-weight:600;">Policies</a>
+  <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="btn btn-primary mobile-book">Book Your Stay</a>
+</aside>
+
+<!-- Page Header -->
+<section style="padding:80px 0 40px; background:var(--cream-light);">
+  <div class="container text-center">
+    <h1 style="font-size:clamp(2.2rem,4vw,3rem);">Our Policies</h1>
+    <p style="font-size:1.15rem; color:var(--text-soft); max-width:650px; margin:12px auto 0;">Have a look at our B&B rooms and inn suites availability and our special offers. Should you have a special requirement? We will be glad to provide individualized quotes upon request.</p>
+  </div>
+</section>
+
+<!-- Policies Content -->
+<section class="section" style="padding:40px 0 80px;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px;">
+
+      <!-- Cancellation Policy -->
+      <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm); grid-column: span 2;">
+        <h2 style="font-size:1.3rem; margin-bottom:12px;">Cancellation Policy</h2>
+        <p><strong>50% of total accommodation payment</strong> is required at the time of booking.</p>
+        <ul style="margin-top:12px; list-style:disc; padding-left:20px; color:var(--muted);">
+          <li style="margin-bottom:8px;"><strong>Cancellation made 21 days in advance</strong> – we will refund your deposit.</li>
+          <li style="margin-bottom:8px;"><strong>Cancellation made less than 15 days prior</strong> – full $50 per night/per room deposit is non-refundable.</li>
+        </ul>
+        <p style="margin-top:12px; color:var(--muted); font-style:italic;">When your deposit amount is given, it will indicate that you have read and agreed to our policies and your room will be held in good faith.</p>
+      </div>
+
+      <!-- No Smoking -->
+      <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm);">
+        <h2 style="font-size:1.3rem; margin-bottom:12px;">No Smoking</h2>
+        <p>Smoking or the burning of candles or incense is <strong>not permitted</strong> in guest rooms or the indoor common areas of the house.</p>
+        <p style="margin-top:10px;">Smoking is allowed on the balcony or veranda <strong>only if other guests give their permission</strong>, and only with connecting doors and windows closed. Be sure that smoke does not migrate into your room from those areas.</p>
+      </div>
+
+      <!-- Pets -->
+      <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm);">
+        <h2 style="font-size:1.3rem; margin-bottom:12px;">Pets</h2>
+        <p>Our cat, <strong>Chip</strong>, resides in our personal section of the house. Although he is not allowed in guest areas, <strong>he does not allow other pets</strong>.</p>
+      </div>
+
+      <!-- Check-in / Check-out -->
+      <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm);">
+        <h2 style="font-size:1.3rem; margin-bottom:12px;">Check‑in &amp; Check‑out</h2>
+        <p><strong>Check‑in:</strong> 3:00 PM <span style="color:var(--muted); font-size:0.9rem;">(earlier luggage and vehicle drop‑off can be arranged)</span></p>
+        <p><strong>Check‑out:</strong> 11:00 AM</p>
+      </div>
+
+      <!-- Making a Reservation -->
+      <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:28px; box-shadow:var(--shadow-sm); grid-column: span 2;">
+        <h2 style="font-size:1.3rem; margin-bottom:12px;">Making a Reservation</h2>
+        <p>Please <strong>Text, Call, or Email</strong> to make a reservation:</p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:14px;">
+          <div>
+            <p><strong>Cellphone:</strong> <a href="tel:+15195896158" style="color:var(--wine);">+1 (519) 589-6158</a></p>
+          </div>
+          <div>
+            <p><strong>Homephone:</strong> <a href="tel:+13659916928" style="color:var(--wine);">+1 (365) 991-6928</a></p>
+          </div>
+          <div style="grid-column: span 2;">
+            <p><strong>Email:</strong> <a href="mailto:pengfuyang@gmail.com" style="color:var(--wine);">pengfuyang@gmail.com</a></p>
+          </div>
+        </div>
+        <p style="margin-top:12px; color:var(--muted); font-size:0.95rem;">We'll respond promptly to confirm availability and answer any questions.</p>
+      </div>
+
+    </div>
+
+    <!-- Contact CTA -->
+    <div style="margin-top:40px; padding:24px; background:var(--ivory); border-radius:var(--radius-md); text-align:center; border-left:4px solid var(--gold);">
+      <p style="font-size:1.1rem; color:var(--text-soft);">Have a question not covered here? <a href="index.html#contact" style="color:var(--wine); font-weight:600;">Reach out to us</a> – we're happy to help.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Ambassador B&amp;B</h3>
+        <div class="footer-brand-sub">and Inn Next Door</div>
+        <p>A warm Victorian bed &amp; breakfast in the heart of Stratford, Ontario — steps from the Festival and Avon Theatres. Welcoming theatre lovers with four swans and a homemade breakfast since 1923.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#rooms">Our Rooms</a></li>
+          <li><a href="policies.html">Policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank">Book Your Stay</a></li>
+          <li><a href="tel:+15195896158">+1 (519) 589-6158</a></li>
+          <li><a href="mailto:pengfuyang@gmail.com">pengfuyang@gmail.com</a></li>
+          <li><a href="https://maps.google.com/?q=266+Ontario+St+Stratford+ON">266 Ontario Street</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Ambassador B&amp;B and Inn Next Door. All rights reserved.</span>
+      <span>266 Ontario Street · Stratford, Ontario · N5A 3H5</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileBackdrop = document.getElementById('mobileBackdrop');
+
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    mobileBackdrop.classList.add('open');
+    mobileBackdrop.style.display = 'block';
+  }
+  function closeMenuFn() {
+    mobileMenu.classList.remove('open');
+    mobileBackdrop.classList.remove('open');
+    setTimeout(() => { mobileBackdrop.style.display = 'none'; }, 300);
+  }
+
+  menuBtn.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeMenuFn);
+  mobileBackdrop.addEventListener('click', closeMenuFn);
+
+  document.querySelectorAll('.mobile-nav-link, .mobile-book').forEach(link => {
+    link.addEventListener('click', closeMenuFn);
+  });
+</script>
+</body>
+</html>
