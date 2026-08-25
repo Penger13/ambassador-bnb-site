@@ -3,227 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- REPLACE: Change the Title and Description -->
-  <title>ROOM_NAME – Ambassador B&amp;B | Stratford</title>
-  <meta name="description" content="Book our ROOM_NAME at Ambassador B&B in Stratford. BED_TYPE, private ensuite, and homemade breakfast." />
+  <title>Luxury Suite – Ambassador's Inn Next Door | Stratford</title>
+  <meta name="description" content="Book our Luxury Suite at Ambassador's Inn Next Door in Stratford. King bed, kitchenette, living room, and premium amenities. $295/night + HST." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ====== HEADER (Copy exactly from your index.html) ====== -->
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-name">Ambassador B&amp;B</span>
-        <span class="logo-sub">and Inn Next Door</span>
-      </a>
-      <nav class="main-nav" aria-label="Primary navigation">
-        <a href="index.html">Home</a>
-        <a href="index.html#rooms">Rooms</a>
-        <a href="index.html#location">Location</a>
-        <a href="index.html#breakfast">Breakfast &amp; Amenities</a>
-        <a href="index.html#local-guide">Local Guide</a>
-        <a href="policies.html">Policies</a>
-        <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="nav-cta">Book Now</a>
-      </nav>
-      <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+<!-- Header -->
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Ambassador B&amp;B</span>
+      <span class="logo-sub">and Inn Next Door</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="index.html#rooms">Rooms</a>
+      <a href="index.html#location">Location</a>
+      <a href="index.html#breakfast">Breakfast &amp; Amenities</a>
+      <a href="index.html#local-guide">Local Guide</a>
+      <a href="policies.html">Policies</a>
+      <a href="index.html#contact" class="nav-cta" style="background: var(--wine); color: #fff;">Book Now</a>
+      <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="nav-cta" style="background: var(--forest); color: #fff;">Check Availability</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-  <!-- ====== MOBILE MENU (Copy exactly from your index.html) ====== -->
-  <div class="mobile-backdrop" id="mobileBackdrop"></div>
-  <aside class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
-    <div class="mobile-menu-head">
-      <div style="font-family: Playfair Display, Georgia, serif; font-weight:600; color:var(--forest-dark);">Menu</div>
-      <button id="closeMenu" aria-label="Close menu">✕</button>
-    </div>
-    <a href="index.html" class="mobile-nav-link">Home</a>
-    <a href="index.html#rooms" class="mobile-nav-link">Rooms</a>
-    <a href="index.html#location" class="mobile-nav-link">Location</a>
-    <a href="index.html#breakfast" class="mobile-nav-link">Breakfast &amp; Amenities</a>
-    <a href="index.html#local-guide" class="mobile-nav-link">Local Guide</a>
-    <a href="policies.html" class="mobile-nav-link">Policies</a>
-    <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="btn btn-primary mobile-book">Book Your Stay</a>
-  </aside>
+<!-- Mobile backdrop -->
+<div class="mobile-backdrop" id="mobileBackdrop"></div>
 
-  <!-- ====== ROOM HERO SECTION ====== -->
-  <section style="min-height:60vh; display:flex; align-items:center; background: linear-gradient(135deg, var(--forest-dark) 0%, #142b21 100%); color:#fff; padding:60px 0;">
-    <div class="container">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
-        <div>
-          <div class="hero-eyebrow">Ambassador B&amp;B</div>
-          <!-- REPLACE: Room Name -->
-          <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); margin-bottom:16px;">ROOM_NAME</h1>
-          <!-- REPLACE: Short description -->
-          <p style="font-size:1.15rem; color:rgba(255,255,255,0.85); margin-bottom:20px;">
-            REPLACE_WITH_SHORT_DESCRIPTION (e.g., A warm, sunlit queen room with a private ensuite).
-          </p>
-          <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
-            <!-- REPLACE: Bed type and size -->
-            <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">1 Queen Bed</span>
-            <!-- REPLACE: Square footage (optional) -->
-            <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">~142 sq ft</span>
-            <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">Private ensuite</span>
-          </div>
-          <div style="display:flex; gap:14px; flex-wrap:wrap;">
-            <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" class="btn btn-primary">Check Availability</a>
-            <a href="index.html#rooms" class="btn btn-ghost">← Back to Rooms</a>
-          </div>
+<!-- Mobile menu -->
+<aside class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-menu-head">
+    <div style="font-family: Playfair Display, Georgia, serif; font-weight:600; color:var(--forest-dark);">Menu</div>
+    <button id="closeMenu" aria-label="Close menu">✕</button>
+  </div>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="index.html#rooms" class="mobile-nav-link">Rooms</a>
+  <a href="index.html#location" class="mobile-nav-link">Location</a>
+  <a href="index.html#breakfast" class="mobile-nav-link">Breakfast &amp; Amenities</a>
+  <a href="index.html#local-guide" class="mobile-nav-link">Local Guide</a>
+  <a href="policies.html" class="mobile-nav-link">Policies</a>
+  <a href="index.html#contact" class="mobile-nav-link" style="color:var(--wine); font-weight:600;">Book Now</a>
+  <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" rel="noopener" class="btn btn-primary mobile-book" style="background:var(--forest);">Check Availability</a>
+</aside>
+
+<!-- Room Hero -->
+<section style="min-height:60vh; display:flex; align-items:center; background: linear-gradient(135deg, var(--forest-dark) 0%, #142b21 100%); color:#fff; padding:60px 0;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;">
+      <div>
+        <div class="hero-eyebrow">Ambassador's Inn Next Door</div>
+        <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); margin-bottom:16px;">Luxury Suite</h1>
+        <p style="font-size:1.15rem; color:rgba(255,255,255,0.85); margin-bottom:20px;">
+          A spacious luxury suite with a separate living room, full kitchenette, and premium amenities – perfect for longer stays or families.
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
+          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">King Bed</span>
+          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">~400 sq ft</span>
+          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">Kitchenette</span>
         </div>
-        <div>
-          <!-- REPLACE: Hero Image Path -->
-          <img src="images/YOUR_ROOM_HERO.jpg" alt="ROOM_NAME" style="width:100%; height:350px; object-fit:cover; border-radius:var(--radius-md); box-shadow:var(--shadow-lg);">
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" class="btn btn-primary">Check Availability</a>
+          <a href="index.html#rooms" class="btn btn-ghost">← Back to Suites</a>
+        </div>
+      </div>
+      <div>
+        <img src="images/luxury-suite-hero.jpg" alt="Luxury Suite" style="width:100%; height:350px; object-fit:cover; border-radius:var(--radius-md); box-shadow:var(--shadow-lg);">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Details & Amenities -->
+<section class="section" style="padding:60px 0;">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:40px;">
+      <div>
+        <h2 style="margin-bottom:12px;">About This Suite</h2>
+        <p style="color:var(--muted); margin-bottom:24px;">
+          <!-- REPLACE: Description paragraph 1 -->
+          Our Luxury Suite offers approximately 400 sq ft of beautifully appointed space with a separate living room, full kitchenette, and a comfortable king bed dressed in premium linens.
+        </p>
+        <p style="color:var(--muted); margin-bottom:24px;">
+          <!-- REPLACE: Description paragraph 2 -->
+          Perfect for longer stays, families, or travelers who prefer more space and self-catering flexibility. The suite features a spacious sitting area, independently controlled HVAC, and a walk-in shower. Breakfast is not included but can be added for $20 CAD per day.
+        </p>
+        <h3 style="margin-bottom:12px;">Amenities</h3>
+        <ul style="display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; list-style:none; padding:0; margin-bottom:30px;">
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ King bed</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Separate living room</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Full kitchenette</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Premium bedding</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Spacious sitting area</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Independently controlled HVAC</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Walk-in shower</li>
+          <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Free WiFi</li>
+        </ul>
+      </div>
+      <!-- Pricing & Booking Sidebar -->
+      <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:30px; box-shadow:var(--shadow-sm); align-self:start;">
+        <div style="font-size:2.2rem; font-weight:700; color:var(--forest-dark);">$295</div>
+        <div style="color:var(--muted); margin-bottom:4px;">per night + HST</div>
+        <div style="color:var(--muted); font-size:0.85rem; margin-bottom:16px; font-style:italic;">Minimum 2-night stay during theatre season</div>
+        <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" class="btn btn-primary" style="width:100%; text-align:center; padding:14px;">Check Availability</a>
+        <hr style="margin:20px 0; border:0; border-top:1px solid #eee;">
+        <div style="font-size:0.9rem; color:var(--muted);">
+          <p><strong>Check‑in:</strong> 3:00 PM – 8:00 PM</p>
+          <p><strong>Check‑out:</strong> 11:00 AM</p>
+          <p style="margin-top:8px; font-style:italic;">Breakfast can be added for $20 CAD/day. For single-night bookings or off-season rates, please <a href="index.html#contact" style="color:var(--wine); text-decoration:underline;">contact us</a>.</p>
+          <p style="margin-top:4px;"><a href="policies.html" style="color:var(--wine); text-decoration:underline;">View full policies →</a></p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ====== DETAILS, AMENITIES & PRICING ====== -->
-  <section class="section" style="padding:60px 0;">
-    <div class="container">
-      <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:40px;">
-        <!-- Left Column -->
-        <div>
-          <h2 style="margin-bottom:12px;">About This Room</h2>
-          <!-- REPLACE: Full description (2 paragraphs) -->
-          <p style="color:var(--muted); margin-bottom:24px;">
-            REPLACE_WITH_LONG_DESCRIPTION_1. (e.g., The Yellow Room is flooded with natural light...)
-          </p>
-          <p style="color:var(--muted); margin-bottom:24px;">
-            REPLACE_WITH_LONG_DESCRIPTION_2.
-          </p>
-          
-          <h3 style="margin-bottom:12px;">Amenities</h3>
-          <ul style="display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; list-style:none; padding:0; margin-bottom:30px;">
-            <!-- REPLACE: List all amenities for this specific room -->
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Queen‑size bed</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Private ensuite bathroom</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Premium imported linens</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Soundproofed walls</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Individually controlled A/C</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Complimentary bathrobes</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Free WiFi</li>
-            <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Iron &amp; board (on request)</li>
-          </ul>
-        </div>
-        <!-- Right Column (Price & Booking) -->
-        <div style="background:var(--white); border:1px solid #eee; border-radius:var(--radius-md); padding:30px; box-shadow:var(--shadow-sm); align-self:start;">
-          <!-- REPLACE: Price -->
-          <div style="font-size:2.2rem; font-weight:700; color:var(--forest-dark);">$XXX</div>
-          <div style="color:var(--muted); margin-bottom:20px;">per night · includes breakfast</div>
-          <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" class="btn btn-primary" style="width:100%; text-align:center; padding:14px;">Book This Room</a>
-          <hr style="margin:24px 0; border:0; border-top:1px solid #eee;">
-          <div style="font-size:0.9rem; color:var(--muted);">
-            <p><strong>Check‑in:</strong> 3:00 PM – 8:00 PM</p>
-            <p><strong>Check‑out:</strong> 11:00 AM</p>
-            <p><a href="policies.html" style="color:var(--wine); text-decoration:underline;">View full policies →</a></p>
-          </div>
-        </div>
+<!-- Gallery -->
+<section class="section" style="background:var(--cream-light); padding:60px 0;">
+  <div class="container">
+    <h2 class="text-center" style="margin-bottom:30px;">Suite Gallery</h2>
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+      <img src="images/luxury-suite-1.jpg" alt="Luxury Suite view 1" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
+      <img src="images/luxury-suite-2.jpg" alt="Luxury Suite view 2" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
+      <img src="images/luxury-suite-3.jpg" alt="Luxury Suite view 3" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
+    </div>
+  </div>
+</section>
+
+<!-- Guest Review -->
+<section class="section" style="padding:60px 0;">
+  <div class="container text-center">
+    <blockquote style="font-size:1.2rem; max-width:700px; margin:0 auto; color:var(--text-soft); font-style:italic; border-left:4px solid var(--gold); padding-left:24px;">
+      <!-- REPLACE: Review text and guest name -->
+      "The suite was spacious and beautifully appointed. Having a kitchenette made our week-long stay so much easier!"
+      <cite style="display:block; margin-top:10px; font-style:normal; font-weight:600; color:var(--forest-dark);">— The Thompsons, Chicago</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>Ambassador B&amp;B</h3>
+        <div class="footer-brand-sub">and Inn Next Door</div>
+        <p>A warm Victorian bed &amp; breakfast in the heart of Stratford, Ontario — steps from the Festival and Avon Theatres. Welcoming theatre lovers with four swans and a homemade breakfast since 1923.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#rooms">Our Rooms</a></li>
+          <li><a href="policies.html">Policies</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank">Check Availability</a></li>
+          <li><a href="tel:+15195896158">+1 (519) 589-6158</a></li>
+          <li><a href="mailto:pengfuyang@gmail.com">pengfuyang@gmail.com</a></li>
+          <li><a href="https://maps.google.com/?q=266+Ontario+St+Stratford+ON">266 Ontario Street</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <!-- ====== GALLERY ====== -->
-  <section class="section" style="background:var(--cream-light); padding:60px 0;">
-    <div class="container">
-      <h2 class="text-center" style="margin-bottom:30px;">Room Gallery</h2>
-      <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
-        <!-- REPLACE: Gallery Image Paths (3 images) -->
-        <img src="images/YOUR_ROOM_GALLERY_1.jpg" alt="ROOM_NAME view 1" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-        <img src="images/YOUR_ROOM_GALLERY_2.jpg" alt="ROOM_NAME view 2" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-        <img src="images/YOUR_ROOM_GALLERY_3.jpg" alt="ROOM_NAME view 3" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-      </div>
+    <div class="footer-bottom">
+      <span>© 2014-2026 Ambassador B&amp;B and Inn Next Door. All rights reserved.</span>
+      <span>262 Ontario Street (Inn) · Stratford, Ontario · N5A 3H5</span>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- ====== GUEST REVIEW ====== -->
-  <section class="section" style="padding:60px 0;">
-    <div class="container text-center">
-      <blockquote style="font-size:1.2rem; max-width:700px; margin:0 auto; color:var(--text-soft); font-style:italic; border-left:4px solid var(--gold); padding-left:24px;">
-        <!-- REPLACE: Review text and guest name -->
-        “REPLACE_WITH_REVIEW_TEXT.”
-        <cite style="display:block; margin-top:10px; font-style:normal; font-weight:600; color:var(--forest-dark);">— Guest Name, City</cite>
-      </blockquote>
-    </div>
-  </section>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const mobileBackdrop = document.getElementById('mobileBackdrop');
 
-  <!-- ====== FOOTER (Copy exactly from your index.html) ====== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <h3>Ambassador B&amp;B</h3>
-          <div class="footer-brand-sub">and Inn Next Door</div>
-          <p>A warm Victorian bed &amp; breakfast in the heart of Stratford, Ontario — steps from the Festival and Avon Theatres.</p>
-        </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html#rooms">Our Rooms</a></li>
-            <li><a href="index.html#location">Location</a></li>
-            <li><a href="policies.html">Policies</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul>
-            <li><a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank">Book Your Stay</a></li>
-            <li><a href="tel:+15195896158">+1 (519) 589-6158</a></li>
-            <li><a href="mailto:stay@ambassadorbandb.com">stay@ambassadorbandb.com</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Ambassador B&amp;B and Inn Next Door. All rights reserved.</span>
-      </div>
-    </div>
-  </footer>
+  function openMenu() {
+    mobileMenu.classList.add('open');
+    mobileBackdrop.classList.add('open');
+    mobileBackdrop.style.display = 'block';
+  }
+  function closeMenuFn() {
+    mobileMenu.classList.remove('open');
+    mobileBackdrop.classList.remove('open');
+    setTimeout(() => { mobileBackdrop.style.display = 'none'; }, 300);
+  }
 
-  <!-- ====== SCRIPTS (Copy exactly from your index.html) ====== -->
-  <script>
-    // Mobile menu logic
-    const menuBtn = document.getElementById('menuBtn');
-    const closeMenu = document.getElementById('closeMenu');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const mobileBackdrop = document.getElementById('mobileBackdrop');
+  menuBtn.addEventListener('click', openMenu);
+  closeMenu.addEventListener('click', closeMenuFn);
+  mobileBackdrop.addEventListener('click', closeMenuFn);
 
-    function openMenu() {
-      mobileMenu.classList.add('open');
-      mobileBackdrop.classList.add('open');
-      mobileBackdrop.style.display = 'block';
-    }
-    function closeMenuFn() {
-      mobileMenu.classList.remove('open');
-      mobileBackdrop.classList.remove('open');
-      setTimeout(() => { mobileBackdrop.style.display = 'none'; }, 300);
-    }
-
-    menuBtn.addEventListener('click', openMenu);
-    closeMenu.addEventListener('click', closeMenuFn);
-    mobileBackdrop.addEventListener('click', closeMenuFn);
-
-    document.querySelectorAll('.mobile-nav-link, .mobile-book').forEach(link => {
-      link.addEventListener('click', closeMenuFn);
-    });
-
-    // Reveal on scroll (optional, keep it if you want)
-    const revealElements = document.querySelectorAll('.reveal');
-    if ('IntersectionObserver' in window) {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-      revealElements.forEach(el => observer.observe(el));
-    } else {
-      revealElements.forEach(el => el.classList.add('visible'));
-    }
-  </script>
+  document.querySelectorAll('.mobile-nav-link, .mobile-book').forEach(link => {
+    link.addEventListener('click', closeMenuFn);
+  });
+</script>
 </body>
 </html>
