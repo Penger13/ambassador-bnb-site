@@ -137,11 +137,36 @@
 <!-- Guest Review -->
 <section class="section" style="padding:60px 0;">
   <div class="container text-center">
-    <blockquote style="font-size:1.2rem; max-width:700px; margin:0 auto; color:var(--text-soft); font-style:italic; border-left:4px solid var(--gold); padding-left:24px;">
-      <!-- REPLACE: Review text and guest name -->
-      "The garden view from our room was so peaceful! A wonderful place to stay in Stratford."
-      <cite style="display:block; margin-top:10px; font-style:normal; font-weight:600; color:var(--forest-dark);">— Margaret &amp; Bob, Ottawa</cite>
-    </blockquote>
+    <div style="max-width: 800px; margin: 0 auto;">
+      
+      <!-- Review 1 -->
+      <div style="background: var(--ivory); border-radius: var(--radius-md); padding: 30px; box-shadow: var(--shadow-sm); margin-bottom: 24px; border-left: 4px solid var(--gold);">
+        <div style="font-size: 2.5rem; color: var(--gold); margin-bottom: 8px;">"</div>
+        <blockquote style="font-size: 1.15rem; line-height: 1.7; color: var(--text-soft); font-style: italic;">
+          The owners were incredibly warm and welcoming, making me feel right at home. The room was spotless, comfortable, and well-equipped. The highlight was the delicious, freshly cooked breakfast.
+        </blockquote>
+        <cite style="display: block; margin-top: 12px; font-style: normal; font-weight: 600; color: var(--forest-dark);">— Preeti K., <span style="font-weight: 400; color: var(--muted);">Google</span></cite>
+      </div>
+
+      <!-- Review 2 -->
+      <div style="background: var(--ivory); border-radius: var(--radius-md); padding: 30px; box-shadow: var(--shadow-sm); margin-bottom: 24px; border-left: 4px solid var(--gold);">
+        <div style="font-size: 2.5rem; color: var(--gold); margin-bottom: 8px;">"</div>
+        <blockquote style="font-size: 1.15rem; line-height: 1.7; color: var(--text-soft); font-style: italic;">
+          The property was cozy and comfortable. The breakfast was excellent, featuring fresh fruit and delicious desserts. Andrew and Biru were incredibly friendly and hospitable, making us feel truly welcome.
+        </blockquote>
+        <cite style="display: block; margin-top: 12px; font-style: normal; font-weight: 600; color: var(--forest-dark);">— Yinghua, <span style="font-weight: 400; color: var(--muted);">Booking.com</span></cite>
+      </div>
+
+      <!-- Review 3 -->
+      <div style="background: var(--ivory); border-radius: var(--radius-md); padding: 30px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--gold);">
+        <div style="font-size: 2.5rem; color: var(--gold); margin-bottom: 8px;">"</div>
+        <blockquote style="font-size: 1.15rem; line-height: 1.7; color: var(--text-soft); font-style: italic;">
+          If you like the weekend in Stratford to see Festival productions this is a place to come. Our hosts Andrew and his wife are welcoming and friendly. My wife and I have been repeat customers and you will be too.
+        </blockquote>
+        <cite style="display: block; margin-top: 12px; font-style: normal; font-weight: 600; color: var(--forest-dark);">— Vito M., <span style="font-weight: 400; color: var(--muted);">Google</span></cite>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -179,30 +204,8 @@
   </div>
 </footer>
 
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeMenu = document.getElementById('closeMenu');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const mobileBackdrop = document.getElementById('mobileBackdrop');
+  <!-- ... all your HTML content ... -->
 
-  function openMenu() {
-    mobileMenu.classList.add('open');
-    mobileBackdrop.classList.add('open');
-    mobileBackdrop.style.display = 'block';
-  }
-  function closeMenuFn() {
-    mobileMenu.classList.remove('open');
-    mobileBackdrop.classList.remove('open');
-    setTimeout(() => { mobileBackdrop.style.display = 'none'; }, 300);
-  }
-
-  menuBtn.addEventListener('click', openMenu);
-  closeMenu.addEventListener('click', closeMenuFn);
-  mobileBackdrop.addEventListener('click', closeMenuFn);
-
-  document.querySelectorAll('.mobile-nav-link, .mobile-book').forEach(link => {
-    link.addEventListener('click', closeMenuFn);
-  });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>

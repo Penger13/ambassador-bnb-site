@@ -137,11 +137,36 @@
 <!-- Guest Review -->
 <section class="section" style="padding:60px 0;">
   <div class="container text-center">
-    <blockquote style="font-size:1.2rem; max-width:700px; margin:0 auto; color:var(--text-soft); font-style:italic; border-left:4px solid var(--gold); padding-left:24px;">
-      <!-- REPLACE: Review text and guest name -->
-      "Loved the garden view from our suite! So peaceful and quiet. The kitchenette was a great bonus."
-      <cite style="display:block; margin-top:10px; font-style:normal; font-weight:600; color:var(--forest-dark);">— David &amp; Anne, Halifax</cite>
-    </blockquote>
+    <div style="max-width: 800px; margin: 0 auto;">
+      
+      <!-- Review 1 -->
+      <div style="background: var(--ivory); border-radius: var(--radius-md); padding: 30px; box-shadow: var(--shadow-sm); margin-bottom: 24px; border-left: 4px solid var(--gold);">
+        <div style="font-size: 2.5rem; color: var(--gold); margin-bottom: 8px;">"</div>
+        <blockquote style="font-size: 1.15rem; line-height: 1.7; color: var(--text-soft); font-style: italic;">
+          Great location, friendly owners on site, beautifully appointed balcony room with a comfortable king bed. Exceeded expectations.
+        </blockquote>
+        <cite style="display: block; margin-top: 12px; font-style: normal; font-weight: 600; color: var(--forest-dark);">— Inn Guest, <span style="font-weight: 400; color: var(--muted);">Vrbo</span></cite>
+      </div>
+
+      <!-- Review 2 -->
+      <div style="background: var(--ivory); border-radius: var(--radius-md); padding: 30px; box-shadow: var(--shadow-sm); margin-bottom: 24px; border-left: 4px solid var(--gold);">
+        <div style="font-size: 2.5rem; color: var(--gold); margin-bottom: 8px;">"</div>
+        <blockquote style="font-size: 1.15rem; line-height: 1.7; color: var(--text-soft); font-style: italic;">
+          The location was perfect, as we wanted to walk and leave the car parked. The Inn is very close to downtown and so it was easy to walk everywhere. Clean, quiet room. Very good breakfast; nice staff.
+        </blockquote>
+        <cite style="display: block; margin-top: 12px; font-style: normal; font-weight: 600; color: var(--forest-dark);">— Inn Guest, <span style="font-weight: 400; color: var(--muted);">Booking.com</span></cite>
+      </div>
+
+      <!-- Review 3 -->
+      <div style="background: var(--ivory); border-radius: var(--radius-md); padding: 30px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--gold);">
+        <div style="font-size: 2.5rem; color: var(--gold); margin-bottom: 8px;">"</div>
+        <blockquote style="font-size: 1.15rem; line-height: 1.7; color: var(--text-soft); font-style: italic;">
+          Andrew Peng and his wife are gracious, friendly and helpful hosts. Their breakfasts were delicious. The beds were very comfortable for my back and my arthritis.
+        </blockquote>
+        <cite style="display: block; margin-top: 12px; font-style: normal; font-weight: 600; color: var(--forest-dark);">— Inn Guest, <span style="font-weight: 400; color: var(--muted);">Booking.com</span></cite>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -179,30 +204,8 @@
   </div>
 </footer>
 
-<script>
-  const menuBtn = document.getElementById('menuBtn');
-  const closeMenu = document.getElementById('closeMenu');
-  const mobileMenu = document.getElementById('mobileMenu');
-  const mobileBackdrop = document.getElementById('mobileBackdrop');
+  <!-- ... all your HTML content ... -->
 
-  function openMenu() {
-    mobileMenu.classList.add('open');
-    mobileBackdrop.classList.add('open');
-    mobileBackdrop.style.display = 'block';
-  }
-  function closeMenuFn() {
-    mobileMenu.classList.remove('open');
-    mobileBackdrop.classList.remove('open');
-    setTimeout(() => { mobileBackdrop.style.display = 'none'; }, 300);
-  }
-
-  menuBtn.addEventListener('click', openMenu);
-  closeMenu.addEventListener('click', closeMenuFn);
-  mobileBackdrop.addEventListener('click', closeMenuFn);
-
-  document.querySelectorAll('.mobile-nav-link, .mobile-book').forEach(link => {
-    link.addEventListener('click', closeMenuFn);
-  });
-</script>
+  <script src="script.js"></script>
 </body>
 </html>
