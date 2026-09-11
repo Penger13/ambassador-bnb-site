@@ -188,3 +188,75 @@
   // Initialize
   showSlide(0);
 })();
+
+// ========================================
+// ROOM GALLERY ROTATOR (Click-Based)
+// ========================================
+(function() {
+  const gallery = document.getElementById('roomGallery');
+  if (!gallery) return;
+
+  const slides = gallery.querySelectorAll('.room-gallery-slide');
+  const prevBtn = document.getElementById('roomGalleryPrev');
+  const nextBtn = document.getElementById('roomGalleryNext');
+  const counter = document.getElementById('roomGalleryCounter');
+  const dots = gallery.querySelectorAll('.room-gallery-dot');
+
+  let current = 0;
+
+  function showSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+
+    if (counter) {
+      counter.textContent = `${index + 1} / ${slides.length}`;
+    }
+
+    current = index;
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showSlide(current - 1);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showSlide(current + 1);
+    });
+  }
+
+  // Click the image itself to advance
+  slides.forEach((slide) => {
+    slide.addEventListener('click', () => {
+      if (slide.classList.contains('active')) showSlide(current + 1);
+    });
+  });
+
+  // Dot click (if you have dots)
+  dots.forEach((dot) => {
+    dot.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showSlide(parseInt(dot.dataset.index, 10));
+    });
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') showSlide(current - 1);
+    if (e.key === 'ArrowRight') showSlide(current + 1);
+  });
+
+  showSlide(0);
+})();
