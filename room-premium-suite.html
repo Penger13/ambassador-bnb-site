@@ -59,12 +59,12 @@
         <div class="hero-eyebrow">Ambassador's Inn Next Door</div>
         <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); margin-bottom:16px; color:#fff;">Premium Suite</h1>
         <p style="font-size:1.15rem; color:rgba(255,255,255,0.85); margin-bottom:20px;">
-          Our largest suite featuring stunning park views, a separate living room, and a full kitchenette – the ultimate in comfort and space.
+          Our largest suite featuring a large balcony, a separate living room, and a full kitchenette – the ultimate in comfort and space.
         </p>
         <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
           <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">King Bed</span>
           <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">~420 sq ft</span>
-          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">Park view</span>
+          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">Large Balcony</span>
         </div>
         <div style="display:flex; gap:14px; flex-wrap:wrap;">
           <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" class="btn btn-primary">Check Availability</a>
@@ -72,8 +72,18 @@
         </div>
       </div>
       <div>
-        <img src="images/premium-suite-hero.jpg" alt="Premium Suite" style="width:100%; height:350px; object-fit:cover; border-radius:var(--radius-md); box-shadow:var(--shadow-lg);">
-      </div>
+        <div class="hero-image-rotator" id="roomGallery">
+  <img src="images/premium-suite-1.jpg" alt="Premium Suite view 1" class="room-gallery-slide active" />
+  <img src="images/premium-suite-2.jpg" alt="Premium Suite view 2" class="room-gallery-slide" />
+  <img src="images/premium-suite-3.jpg" alt="Premium Suite view 3" class="room-gallery-slide" />
+  <img src="images/premium-suite-4.jpg" alt="Premium Suite view 4" class="room-gallery-slide" />
+  <img src="images/premium-suite-5.jpg" alt="Premium Suite view 5" class="room-gallery-slide" />
+  <img src="images/premium-suite-6.jpg" alt="Premium Suite view 6" class="room-gallery-slide" />
+
+  <div class="room-gallery-caption" id="roomGalleryCounter">1 / 6</div>
+  <button class="room-gallery-arrow room-gallery-prev" id="roomGalleryPrev" aria-label="Previous image">‹</button>
+  <button class="room-gallery-arrow room-gallery-next" id="roomGalleryNext" aria-label="Next image">›</button>
+</div>
     </div>
   </div>
 </section>
@@ -86,11 +96,11 @@
         <h2 style="margin-bottom:12px;">About This Suite</h2>
         <p style="color:var(--muted); margin-bottom:24px;">
           <!-- REPLACE: Description paragraph 1 -->
-          Our Premium Suite is our largest and most luxurious offering at approximately 420 sq ft. It features a separate living room, full kitchenette, and a comfortable king bed with premium linens. The suite offers beautiful park views that create a serene and relaxing atmosphere.
+          Our Premium Suite is our largest and most luxurious offering at approximately 420 sq ft. It features a separate living room, full kitchenette, and a comfortable king bed with premium linens. The suite features a large balcony perfect for enjoying your morning coffee or an evening glass of wine.
         </p>
         <p style="color:var(--muted); margin-bottom:24px;">
           <!-- REPLACE: Description paragraph 2 -->
-          Perfect for extended stays, families, or travelers who want the ultimate in comfort and space. The suite includes a spacious sitting area, independently controlled HVAC, and a walk-in shower. Breakfast is not included but can be added for $20 CAD per day.
+          Perfect for extended stays, families, or travellers who want the ultimate in comfort and space. The suite includes a spacious sitting area, independently controlled HVAC, and a walk-in shower. Breakfast is not included but can be added for $20 CAD per day.
         </p>
         <p style="color:var(--muted); margin-bottom:24px;">
   <strong>Keurig &amp; K-Cups:</strong> Each suite includes a Keurig machine with <strong>2 complimentary K-Cups per person, per day</strong> included in your stay. Additional K-Cups can be purchased if needed.
@@ -121,18 +131,6 @@
           <p style="margin-top:4px;"><a href="policies.html" style="color:var(--wine); text-decoration:underline;">View full policies →</a></p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery -->
-<section class="section" style="background:var(--cream-light); padding:60px 0;">
-  <div class="container">
-    <h2 class="text-center" style="margin-bottom:30px;">Suite Gallery</h2>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
-      <img src="images/premium-suite-1.jpg" alt="Premium Suite view 1" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-      <img src="images/premium-suite-2.jpg" alt="Premium Suite view 2" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-      <img src="images/premium-suite-3.jpg" alt="Premium Suite view 3" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
     </div>
   </div>
 </section>
