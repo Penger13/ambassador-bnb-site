@@ -984,3 +984,31 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   );
   box-shadow: none;
 }
+
+/* ========================================
+   Hero Buttons - Solid Colors, White Text
+   ======================================== */
+
+/* Gold button */
+.btn-gold {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+.btn-gold:hover {
+  background: var(--gold-light);
+  border-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+/* Forest green button */
+.btn-green {
+  background: var(--forest);
+  color: #fff;
+  border-color: var(--forest);
+}
+.btn-green:hover {
+  background: var(--forest-dark);
+  border-color: var(--forest-dark);
+  transform: translateY(-1px);
+}
