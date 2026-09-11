@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>King Suite – Ambassador's Inn Next Door | Stratford</title>
-  <meta name="description" content="Book our King Suite at Ambassador's Inn Next Door in Stratford. Two queen beds, kitchenette, living room, and premium amenities. $295/night + HST." />
+  <meta name="description" content="Book our King Suite at Ambassador's Inn Next Door in Stratford. King bed, kitchenette, private balcony, and premium amenities. $295/night + HST." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -59,12 +59,12 @@
         <div class="hero-eyebrow">Ambassador's Inn Next Door</div>
         <h1 style="font-size:clamp(2.2rem,4vw,3.2rem); margin-bottom:16px; color:#fff;">King Suite</h1>
         <p style="font-size:1.15rem; color:rgba(255,255,255,0.85); margin-bottom:20px;">
-          Our spacious King Suite features two queen beds, a separate living room, and a full kitchenette – ideal for families or groups.
+          Our spacious King Suite features a king bed, a separate living room, and a full kitchenette – ideal for families or groups.
         </p>
         <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:20px;">
-          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">2 Queen Beds</span>
+          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">King Bed</span>
           <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">~450 sq ft</span>
-          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">Family friendly</span>
+          <span style="background:rgba(255,255,255,0.1); padding:6px 16px; border-radius:999px; font-size:0.9rem;">Private balcony</span>
         </div>
         <div style="display:flex; gap:14px; flex-wrap:wrap;">
           <a href="https://secure.guestserve.com/ambassador-b-and-b-and-inn/" target="_blank" class="btn btn-primary">Check Availability</a>
@@ -72,8 +72,16 @@
         </div>
       </div>
       <div>
-        <img src="images/king-suite-hero.jpg" alt="King Suite" style="width:100%; height:350px; object-fit:cover; border-radius:var(--radius-md); box-shadow:var(--shadow-lg);">
-      </div>
+        <div class="hero-image-rotator" id="roomGallery">
+  <img src="images/king-suite-1.jpg" alt="King Suite view 1" class="room-gallery-slide active" />
+  <img src="images/king-suite-2.jpg" alt="King Suite view 2" class="room-gallery-slide" />
+  <img src="images/king-suite-3.jpg" alt="King Suite view 3" class="room-gallery-slide" />
+  <img src="images/king-suite-4.jpg" alt="King Suite view 4" class="room-gallery-slide" />
+
+  <div class="room-gallery-caption" id="roomGalleryCounter">1 / 4</div>
+  <button class="room-gallery-arrow room-gallery-prev" id="roomGalleryPrev" aria-label="Previous image">‹</button>
+  <button class="room-gallery-arrow room-gallery-next" id="roomGalleryNext" aria-label="Next image">›</button>
+</div>
     </div>
   </div>
 </section>
@@ -86,11 +94,11 @@
         <h2 style="margin-bottom:12px;">About This Suite</h2>
         <p style="color:var(--muted); margin-bottom:24px;">
           <!-- REPLACE: Description paragraph 1 -->
-          Our King Suite is our largest accommodation at approximately 450 sq ft, featuring two comfortable queen beds, a separate living room, and a full kitchenette. This suite is perfect for families, groups, or travelers who need extra space.
+          Our King Suite is our largest accommodation at approximately 450 sq ft, featuring a king bed, a separate living room, and a full kitchenette. This suite is perfect for families, groups, or travellers who need extra space.
         </p>
         <p style="color:var(--muted); margin-bottom:24px;">
           <!-- REPLACE: Description paragraph 2 -->
-          The suite includes premium bedding, a spacious sitting area, independently controlled HVAC, and a walk-in shower. With two queen beds, it comfortably accommodates up to four guests. Breakfast is not included but can be added for $20 CAD per day.
+          The suite includes premium bedding, a spacious sitting area, independently controlled HVAC, and a walk-in shower. The suite also features its own private balcony — a lovely spot to enjoy the fresh air. With a king bed, it comfortably accommodates up to four guests. Breakfast is not included but can be added for $20 CAD per day.
         </p>
         <p style="color:var(--muted); margin-bottom:24px;">
   <strong>Keurig &amp; K-Cups:</strong> Each suite includes a Keurig machine with <strong>2 complimentary K-Cups per person, per day</strong> included in your stay. Additional K-Cups can be purchased if needed.
@@ -99,6 +107,7 @@
         <ul style="display:grid; grid-template-columns:1fr 1fr; gap:8px 16px; list-style:none; padding:0; margin-bottom:30px;">
   <li style="position:relative; padding-left:24px; color:var(--muted);">✓ King bed</li>
   <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Separate living room</li>
+  <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Private balcony</li>
   <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Full kitchenette</li>
   <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Premium linens</li>
   <li style="position:relative; padding-left:24px; color:var(--muted);">✓ Keurig machine (2 K-Cups/person/day)</li>
