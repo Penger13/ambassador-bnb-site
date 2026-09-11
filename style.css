@@ -1371,3 +1371,69 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 #inn-suites {
   scroll-margin-top: 80px;
 }
+
+/* ========================================
+   Guest Reviews - Background Image
+   ======================================== */
+#guest-reviews {
+  position: relative;
+  background:
+    linear-gradient(rgba(31, 53, 44, 0.72), rgba(31, 53, 44, 0.78)),
+    url('images/reviews-bg.jpg') center/cover no-repeat;
+}
+
+/* Make the heading text white/light on the dark background */
+#guest-reviews .section-label {
+  color: var(--gold-light) !important;
+}
+
+#guest-reviews h2,
+#guest-reviews .section-subtitle {
+  color: #fff !important;
+}
+
+/* Review quote text */
+#guest-reviews blockquote {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* Guest name */
+#guest-reviews cite {
+  color: var(--gold-light) !important;
+}
+
+/* Source label (Booking.com, Google, etc.) */
+#guest-reviews cite span {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Big opening quote mark */
+#guest-reviews .review-slide > div:first-child {
+  color: var(--gold-light) !important;
+}
+
+/* Dots */
+#guest-reviews .review-dot {
+  background: rgba(255, 255, 255, 0.4) !important;
+}
+#guest-reviews .review-dot.active {
+  background: var(--gold-light) !important;
+}
+
+/* Optional: soft frosted glass behind the quote */
+#guest-reviews blockquote {
+  padding: 24px 30px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(2px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile: darker overlay for readability */
+@media (max-width: 700px) {
+  #guest-reviews {
+    background:
+      linear-gradient(rgba(31, 53, 44, 0.8), rgba(31, 53, 44, 0.88)),
+      url('images/reviews-bg.jpg') center/cover no-repeat;
+  }
+}
