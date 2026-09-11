@@ -247,9 +247,12 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   min-height: 90vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--forest-dark) 0%, #142b21 100%);
+  background:
+    linear-gradient(135deg, rgba(31, 53, 44, 0.75) 0%, rgba(20, 43, 33, 0.85) 100%),
+    url('images/front-of-bnb.jpg') center/cover no-repeat;
   color: #fff;
   padding: 100px 0;
+  position: relative;
 }
 .hero-content { max-width: 750px; }
 .hero-eyebrow {
