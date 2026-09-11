@@ -902,3 +902,85 @@ h3 { font-size: 1.3rem; font-weight: 600; }
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ========================================
+   LOCAL GUIDE SECTION - Full Background Image
+   ======================================== */
+#local-guide {
+  position: relative;
+  background:
+    linear-gradient(rgba(31, 53, 44, 0.72), rgba(31, 53, 44, 0.78)),
+    url('images/stratford-river.jpg') center/cover no-repeat;
+  background-attachment: scroll;
+}
+
+/* --- Header text (on the photo) --- */
+#local-guide > .container > .text-center h2,
+#local-guide > .container > .text-center .section-subtitle {
+  color: #fff !important;
+}
+
+#local-guide > .container > .text-center .section-label {
+  color: var(--gold-light) !important;
+}
+
+/* --- Intro block text (on the photo) --- */
+#local-guide .local-intro-text h2,
+#local-guide .local-intro-text p,
+#local-guide .festival-point-body h4,
+#local-guide .festival-point-body p {
+  color: #fff !important;
+}
+
+#local-guide .local-intro-text .section-label {
+  color: var(--gold-light) !important;
+}
+
+#local-guide .festival-point-num {
+  color: var(--gold-light) !important;
+}
+
+/* --- Cards: solid white so they're readable --- */
+#local-guide .local-card {
+  background: var(--white);
+}
+
+/* --- Optional: white outline for the intro image --- */
+#local-guide .local-intro-img img {
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* --- Mobile: darken slightly more for readability --- */
+@media (max-width: 700px) {
+  #local-guide {
+    background:
+      linear-gradient(rgba(31, 53, 44, 0.8), rgba(31, 53, 44, 0.85)),
+      url('images/stratford-river.jpg') center/cover no-repeat;
+  }
+}
+
+/* ========================================
+   LOCAL GUIDE - Stratford Festival Theatre Photo
+   Fades on left/right edges
+   ======================================== */
+   #local-guide .local-intro-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 15%,
+    black 85%,
+    transparent 100%
+  );
+  box-shadow: none;
+}
