@@ -71,9 +71,19 @@
           <a href="index.html#rooms" class="btn btn-ghost">← Back to Suites</a>
         </div>
       </div>
-      <div>
-        <img src="images/luxury-suite-hero.jpg" alt="Luxury Suite" style="width:100%; height:350px; object-fit:cover; border-radius:var(--radius-md); box-shadow:var(--shadow-lg);">
-      </div>
+      <div class="hero-image-rotator" id="roomGallery">
+  <img src="images/luxury-suite-1.jpg" alt="Luxury Suite view 1" class="room-gallery-slide active" />
+  <img src="images/luxury-suite-2.jpg" alt="Luxury Suite view 2" class="room-gallery-slide" />
+  <img src="images/luxury-suite-3.jpg" alt="Luxury Suite view 3" class="room-gallery-slide" />
+  <img src="images/luxury-suite-4.jpg" alt="Luxury Suite view 4" class="room-gallery-slide" />
+  <img src="images/luxury-suite-5.jpg" alt="Luxury Suite view 5" class="room-gallery-slide" />
+  <img src="images/luxury-suite-6.jpg" alt="Luxury Suite view 6" class="room-gallery-slide" />
+
+  <div class="room-gallery-caption" id="roomGalleryCounter">1 / 6</div>
+
+  <button class="room-gallery-arrow room-gallery-prev" id="roomGalleryPrev" aria-label="Previous image">‹</button>
+  <button class="room-gallery-arrow room-gallery-next" id="roomGalleryNext" aria-label="Next image">›</button>
+</div>
     </div>
   </div>
 </section>
@@ -121,18 +131,6 @@
           <p style="margin-top:4px;"><a href="policies.html" style="color:var(--wine); text-decoration:underline;">View full policies →</a></p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery -->
-<section class="section" style="background:var(--cream-light); padding:60px 0;">
-  <div class="container">
-    <h2 class="text-center" style="margin-bottom:30px;">Suite Gallery</h2>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
-      <img src="images/luxury-suite-1.jpg" alt="Luxury Suite view 1" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-      <img src="images/luxury-suite-2.jpg" alt="Luxury Suite view 2" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
-      <img src="images/luxury-suite-3.jpg" alt="Luxury Suite view 3" style="width:100%; height:220px; object-fit:cover; border-radius:var(--radius-sm); box-shadow:var(--shadow-sm);">
     </div>
   </div>
 </section>

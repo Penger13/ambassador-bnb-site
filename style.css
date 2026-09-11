@@ -1268,3 +1268,94 @@ h3 { font-size: 1.3rem; font-weight: 600; }
     display: none;
   }
 }
+
+/* ========================================
+   Hero Image Rotator (Room Pages)
+   ======================================== */
+.hero-image-rotator {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.hero-image-rotator .room-gallery-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.hero-image-rotator .room-gallery-slide.active {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Counter badge */
+.hero-image-rotator .room-gallery-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Arrows */
+.hero-image-rotator .room-gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--forest-dark);
+  font-size: 1.4rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  opacity: 0.85;
+  transition: all 0.2s ease;
+  z-index: 3;
+  padding-bottom: 3px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image-rotator .room-gallery-arrow:hover {
+  background: #fff;
+  opacity: 1;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.hero-image-rotator .room-gallery-prev { left: 12px; }
+.hero-image-rotator .room-gallery-next { right: 12px; }
+
+/* Mobile */
+@media (max-width: 900px) {
+  .hero-image-rotator {
+    height: 280px;
+  }
+  .hero-image-rotator .room-gallery-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 1.2rem;
+  }
+}
