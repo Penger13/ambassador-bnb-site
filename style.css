@@ -1152,3 +1152,34 @@ h3 { font-size: 1.3rem; font-weight: 600; }
     bottom: 12px;
   }
 }
+
+/* ========================================
+   Hero - Fade bottom into next section
+   ======================================== */
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(248, 245, 240, 0.4) 50%,
+    rgba(248, 245, 240, 0.8) 80%,
+    #f8f5f0 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Make sure the hero content sits above the fade */
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
