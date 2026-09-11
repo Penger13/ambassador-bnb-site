@@ -268,6 +268,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   font-weight: 700;
   line-height: 1.15;
   margin-bottom: 22px;
+  color: #fff;
 }
 .hero-title em { font-style: italic; color: var(--gold-light); }
 .hero-subtitle {
