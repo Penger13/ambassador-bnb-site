@@ -1183,3 +1183,88 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   position: relative;
   z-index: 2;
 }
+
+/* ========================================
+   Hero Rating Badge
+   ======================================== */
+.hero-rating-badge {
+  position: absolute;
+  top: 130px;
+  right: 48px;
+  background: #fff;
+  padding: 18px 22px 14px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  text-align: center;
+  min-width: 130px;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.hero-rating-score {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.hero-rating-score .score-main {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--gold);
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+}
+
+.hero-rating-score .score-sub {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 2px;   /* nudges it below the baseline */
+  letter-spacing: -0.02em;
+}
+
+.hero-rating-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.hero-rating-stars {
+  color: var(--gold);
+  font-size: 1rem;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .hero-rating-badge {
+    top: 110px;
+    right: 24px;
+    padding: 14px 18px 12px;
+    min-width: 115px;
+  }
+  .hero-rating-score .score-main {
+    font-size: 2rem;
+  }
+  .hero-rating-stars {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
+}
+
+/* Hide on phones */
+@media (max-width: 640px) {
+  .hero-rating-badge {
+    display: none;
+  }
+}
