@@ -1359,3 +1359,15 @@ h3 { font-size: 1.3rem; font-weight: 600; }
     font-size: 1.2rem;
   }
 }
+
+/* ========================================
+   Anchor Scroll Offset
+   ======================================== */
+#inn-suites,
+#bnb-rooms {
+  scroll-margin-top: 80px;
+}
+#bnb-rooms,
+#inn-suites {
+  scroll-margin-top: 80px;
+}

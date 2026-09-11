@@ -146,7 +146,7 @@
     </div>
 
     <!-- ====== B&B GUEST HOME ====== -->
-    <div class="rooms-subsection">
+    <div class="rooms-subsection" id="bnb-rooms">
       <div class="rooms-subsection-title">Ambassador B&amp;B Guest Home</div>
       <p class="rooms-subsection-sub">Four spacious guest rooms on the main property, each with a private ensuite bath, premium linens, and a homemade breakfast to start your day. Included: WiFi, air conditioning, and free on-site parking.</p>
       
@@ -264,7 +264,7 @@
     </div>
 
     <!-- ====== INN NEXT DOOR ====== -->
-    <div class="rooms-subsection">
+    <div class="rooms-subsection" id="inn-suites">
       <div class="rooms-subsection-title">Ambassador's Inn Next Door</div>
       <p class="rooms-subsection-sub">Four independent luxury suites, each with its own living room and kitchenette — perfect for longer stays, families, or travellers who prefer more space and self-catering flexibility. Breakfast not included.</p>
       
@@ -398,10 +398,23 @@
 <section id="breakfast" class="section">
   <div class="container">
     <div class="breakfast-hero reveal">
-      <div class="breakfast-image">
-        <img src="images/breakfast.jpg" alt="Homemade breakfast spread" />
-      </div>
-      <div class="breakfast-text">
+  <div class="breakfast-image">
+    <div class="hero-image-rotator" id="breakfastGallery">
+      <img src="images/breakfast-1.jpg" alt="Homemade breakfast 1" class="room-gallery-slide active" />
+      <img src="images/breakfast-2.jpg" alt="Homemade breakfast 2" class="room-gallery-slide" />
+      <img src="images/breakfast-3.jpg" alt="Homemade breakfast 3" class="room-gallery-slide" />
+      <img src="images/breakfast-4.jpg" alt="Homemade breakfast 4" class="room-gallery-slide" />
+      <img src="images/breakfast-5.jpg" alt="Homemade breakfast 5" class="room-gallery-slide" />
+      <img src="images/breakfast-6.jpg" alt="Homemade breakfast 6" class="room-gallery-slide" />
+      <img src="images/breakfast-7.jpg" alt="Homemade breakfast 7" class="room-gallery-slide" />
+
+      <div class="room-gallery-caption" id="breakfastGalleryCounter">1 / 7</div>
+      <button class="room-gallery-arrow room-gallery-prev" id="breakfastGalleryPrev" aria-label="Previous image">‹</button>
+      <button class="room-gallery-arrow room-gallery-next" id="breakfastGalleryNext" aria-label="Next image">›</button>
+    </div>
+  </div>
+  <div class="breakfast-text">
+    ...
         <div class="section-label">Start Your Day Right</div>
         <h2>Homemade Breakfast, <em style="font-style: italic; color: var(--wine);">Two Traditions</em></h2>
         
