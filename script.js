@@ -112,3 +112,79 @@
   showSlide(0);
   startRotation();
 })();
+
+// ========================================
+// THEATRE GALLERY (Click-Based)
+// ========================================
+(function() {
+  const slides = document.querySelectorAll('.theatre-slide');
+  const prevBtn = document.querySelector('.theatre-prev');
+  const nextBtn = document.querySelector('.theatre-next');
+  const nameLabel = document.getElementById('theatre-name');
+  const counterLabel = document.getElementById('theatre-counter');
+  const dots = document.querySelectorAll('.theatre-dot');
+
+  // Only run if the gallery exists on this page
+  if (slides.length === 0 || !prevBtn || !nextBtn) return;
+
+  let current = 0;
+
+  function showSlide(index) {
+    // Wrap around
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+
+    dots.forEach((dot, i) => {
+      dot.classList.toggle('active', i === index);
+    });
+
+    if (nameLabel) {
+      nameLabel.textContent = slides[index].dataset.name || '';
+    }
+    if (counterLabel) {
+      counterLabel.textContent = `${index + 1} / ${slides.length}`;
+    }
+
+    current = index;
+  }
+
+  prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showSlide(current - 1);
+  });
+
+  nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showSlide(current + 1);
+  });
+
+  // Click the image itself to advance
+  slides.forEach((slide) => {
+    slide.addEventListener('click', () => {
+      if (slide.classList.contains('active')) {
+        showSlide(current + 1);
+      }
+    });
+  });
+
+  // Dot click (if you enable dots)
+  dots.forEach((dot) => {
+    dot.addEventListener('click', () => {
+      showSlide(parseInt(dot.dataset.index, 10));
+    });
+  });
+
+  // Keyboard arrows for accessibility
+  document.addEventListener('keydown', (e) => {
+    // Only when the gallery is roughly in view — optional
+    if (e.key === 'ArrowLeft') showSlide(current - 1);
+    if (e.key === 'ArrowRight') showSlide(current + 1);
+  });
+
+  // Initialize
+  showSlide(0);
+})();
