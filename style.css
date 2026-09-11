@@ -1437,3 +1437,18 @@ h3 { font-size: 1.3rem; font-weight: 600; }
       url('images/reviews-bg.jpg') center/cover no-repeat;
   }
 }
+
+/* ========================================
+   Restaurant Name Links
+   ======================================== */
+.restaurant-name a {
+  color: var(--forest-dark);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.restaurant-name a:hover {
+  color: var(--wine);
+  border-bottom-color: var(--wine);
+}
