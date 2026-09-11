@@ -312,3 +312,55 @@
 
   showSlide(0);
 })();
+
+// ========================================
+// COMMON AREAS GALLERY ROTATOR
+// ========================================
+(function() {
+  const gallery = document.getElementById('commonAreaGallery');
+  if (!gallery) return;
+
+  const slides = gallery.querySelectorAll('.room-gallery-slide');
+  const prevBtn = document.getElementById('commonAreaGalleryPrev');
+  const nextBtn = document.getElementById('commonAreaGalleryNext');
+  const counter = document.getElementById('commonAreaGalleryCounter');
+
+  let current = 0;
+
+  function showSlide(index) {
+    if (index < 0) index = slides.length - 1;
+    if (index >= slides.length) index = 0;
+
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+    });
+
+    if (counter) {
+      counter.textContent = `${index + 1} / ${slides.length}`;
+    }
+
+    current = index;
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showSlide(current - 1);
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      showSlide(current + 1);
+    });
+  }
+
+  slides.forEach((slide) => {
+    slide.addEventListener('click', () => {
+      if (slide.classList.contains('active')) showSlide(current + 1);
+    });
+  });
+
+  showSlide(0);
+})();
