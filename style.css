@@ -909,9 +909,17 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 #local-guide {
   position: relative;
   background:
-    linear-gradient(rgba(31, 53, 44, 0.72), rgba(31, 53, 44, 0.78)),
+    linear-gradient(rgba(31, 53, 44, 0.25), rgba(20, 43, 33, 0.35)),
     url('images/stratford-river.jpg') center/cover no-repeat;
   background-attachment: scroll;
+}
+
+#local-guide .local-intro-text h2,
+#local-guide .local-intro-text p,
+#local-guide .festival-point-body h4,
+#local-guide .festival-point-body p,
+#local-guide > .container > .text-center h2 {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* --- Header text (on the photo) --- */
