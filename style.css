@@ -1386,8 +1386,13 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 #guest-reviews {
   position: relative;
   background:
-    linear-gradient(rgba(31, 53, 44, 0.72), rgba(31, 53, 44, 0.78)),
+    linear-gradient(rgba(31, 53, 44, 0.35), rgba(20, 43, 33, 0.45)),
     url('images/reviews-bg.jpg') center/cover no-repeat;
+}
+
+#guest-reviews h2,
+#guest-reviews .section-subtitle {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* Make the heading text white/light on the dark background */
