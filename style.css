@@ -249,7 +249,8 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   align-items: center;
   background:
     linear-gradient(135deg, rgba(31, 53, 44, 0.35) 0%, rgba(20, 43, 33, 0.45) 100%),
-    url('images/front-of-bnb.jpg') center/cover no-repeat;
+    /* CHANGED 'center' TO 'center 25%' TO SHIFT IMAGE DOWN */
+    url('images/front-of-bnb.jpg') center 25%/cover no-repeat;
   color: #fff;
   padding: 100px 0;
   position: relative;
@@ -1485,4 +1486,20 @@ h1.hero-title {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
 }
 
+/* Keep the logo link container aligned properly */
+.logo {
+  display: flex;
+  align-items: center;
+}
 
+/* Control the size and background transparency of the logo image */
+.logo-image {
+  height: 100px;               /* Bumped up from 55px to make it larger */
+  width: auto;                /* Keeps the width scaling naturally so it doesn't stretch weirdly */
+  display: block;
+  
+  /* CRITICAL FIXES FOR THE WHITE BOX AND SHAPE */
+  mix-blend-mode: multiply;   /* Automatically turns the logo's pure white background transparent */
+  transform: scaleX(1.1);     /* Gently stretches the horizontal width by 10% to make it wider */
+  transform-origin: left;     /* Ensures it stretches smoothly out to the right side */
+}
