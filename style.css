@@ -256,7 +256,7 @@ h3 { font-size: 1.3rem; font-weight: 600; }
 }
 .hero-content { max-width: 750px; }
 .hero-eyebrow {
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--gold-light);
@@ -1465,3 +1465,24 @@ h3 { font-size: 1.3rem; font-weight: 600; }
   color: var(--wine);
   border-bottom-color: var(--wine);
 }
+
+/* 1. Main Title Text */
+h1.hero-title {
+  /* Soft, deep shadow to lift the large text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* 2. Small "Est. 1923" Eyebrow Text */
+.hero-eyebrow {
+  color: var(--gold-light);
+  /* Very tight, sharp shadow so small text stays crisp */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* 3. Description Paragraph Text */
+.hero-subtitle {
+  /* Smooth, widely dispersed blur to help block paragraphs pop from images */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+
