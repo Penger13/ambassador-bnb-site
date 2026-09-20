@@ -1503,3 +1503,4 @@ h1.hero-title {
   transform: scaleX(1.1);     /* Gently stretches the horizontal width by 10% to make it wider */
   transform-origin: left;     /* Ensures it stretches smoothly out to the right side */
 }
+
